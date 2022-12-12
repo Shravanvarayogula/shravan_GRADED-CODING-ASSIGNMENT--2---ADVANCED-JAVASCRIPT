@@ -1,0 +1,31 @@
+#form-container {
+    background-color: yellow;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    border-radius: 5px;
+    padding: 5%;
+    font-size: x-large;
+}
+#username, #password {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+
+}
+
+#login {
+    position: relative;
+    left: 40%;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    font-size: x-large;
+}
+
+#login:active {
+    color: whitesmoke;
+}
+#error-display {
+    color: red;
+
+}
+

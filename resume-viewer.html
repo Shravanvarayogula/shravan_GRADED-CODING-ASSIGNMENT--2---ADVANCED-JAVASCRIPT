@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Resume Viewer Page</title>
+        <link rel="stylesheet" href="./resume.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+       
+    </head>
+    <body class = "body-container" onload="searchValue('')">
+        <section id="navigation-options"> 
+            <button class="btn btn-medium" onclick="searchValue('previous')" id="previous-item"> Previous </button>
+            <input type="search" name="search" onchange="searchValue('')" placeholder="Search Candidates by Job Title" id="search"> 
+            <button class="btn btn-medium" onclick="searchValue('next')" id="next-item"> Next </button>
+        </section>
+        <div id="error">
+            <i class="fas fa-frown" style="font-size: 100px"></i>
+            <p> No Such Results found </p>       
+        </div>
+
+        <section id="resume-container"> 
+
+            <!-- Name and Designation Container-->
+        <section id="resume-header"> 
+            
+        </section>
+            <!-- Container for Candidate Details -->
+
+        <section id="resume-body"> 
+
+        <!-- Container for Contact, Technical Skills, Hobbies -->
+        <section id="resume-left-info"> 
+
+
+        </section>
+
+
+        <!-- Work Experience, Projects, Education, Acheivements -->
+
+        <section id="resume-core-details"> 
+
+            <!-- Work Experience -->
+            <article class="work-exp">
+                <h4> Work Experience in Previous Company</h4> 
+                <ul class="details-list" id="workExpDates"> 
+                </uls>
+            </article>
+
+                <!-- Projects -->
+                <article class="work-exp">
+
+                    <h4> Projects </h4> 
+                    <ul class="details-list" id="projects"> 
+    
+                    </ul>
+    
+                </article>
+
+                
+                <!-- Education  -->
+                <article class="work-exp">
+
+                    <h4> Education  </h4> 
+                    <ul class="details-list" id="education"> 
+    
+                    </ul>
+    
+                </article>
+     <!-- Internship Details  -->
+                 <article class="work-exp">
+                    <h4> Internship  </h4> 
+                    <ul class="details-list" id="internship"> 
+
+                   </ul>
+
+                 </article>
+
+                <!-- Acheivements  -->
+                <article class="work-exp">
+                    <h4> Acheivements </h4> 
+                    <ul class="details-list" id="acheivements"> 
+            
+                    </ul>
+            
+                </article>
+                </section>
+
+        </section>
+      
+       </section>
+        <script src="./resume-viewer.js" async defer></script>
+    </body>
+</html>
